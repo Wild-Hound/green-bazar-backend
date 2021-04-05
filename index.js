@@ -58,6 +58,4 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
  })
 
 
-app.listen(5200,() =>{
-    console.log('from port 5200')
-})
+app.listen(process.env.PORT || 5200)
